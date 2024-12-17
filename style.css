@@ -1,0 +1,115 @@
+/* Css Reset june 2024 */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100dvh;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+img,
+video,
+svg {
+  height: auto;
+  max-width: 100%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+    transition: none;
+  }
+}
+/**************************************/
+body {
+  font-family: "Montserrat", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #111;
+  color: #fff;
+  overflow: hidden;
+}
+
+.app {
+  width: 100dvw;
+  height: 100dvh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.btn {
+  display: block;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  text-align: center;
+  width: 70px;
+  height: 100dvh;
+  opacity: 0.3;
+  cursor: pointer;
+  transition: opacity 0.1s ease-in-out;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.my-canvas {
+  background-color: #222;
+  display: block;
+  border-radius: 20px;
+}
+.logo-prev {
+  font-size: 30px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  height: 90px;
+  .logo-img {
+    width: 60px;
+  }
+
+  .logo-text {
+    font-size: 40px;
+    span {
+      font-weight: bold;
+      color: rgb(255, 28, 72);
+    }
+  }
+}
+.canv-container {
+  padding-bottom: 15px;
+}
